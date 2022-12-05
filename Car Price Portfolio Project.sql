@@ -63,9 +63,9 @@ GROUP BY [Engine Fuel Type]
 
 SELECT [Engine Fuel Type],
 CASE WHEN [Engine Fuel Type] is null
-AND Make like 'Suzuki'
-AND Model like 'Verona'
-AND Year like 2004 THEN 'regular unleaded'
+		  AND Make like 'Suzuki'
+		  AND Model like 'Verona'
+		  AND Year like 2004 THEN 'regular unleaded'
 ELSE [Engine Fuel Type]
 END
 FROM CarPricePortfolioProject..CarPrice
@@ -73,9 +73,9 @@ WHERE [Engine Fuel Type] is null
 
 UPDATE CarPricePortfolioProject..CarPrice
 SET [Engine Fuel Type] = CASE WHEN [Engine Fuel Type] is null
-		  		AND Make like 'Suzuki'
-		  		AND Model like 'Verona'
-		  		AND Year like 2004 THEN 'regular unleaded'
+		  AND Make like 'Suzuki'
+		  AND Model like 'Verona'
+		  AND Year like 2004 THEN 'regular unleaded'
 ELSE [Engine Fuel Type]
 END
 
@@ -94,97 +94,97 @@ ORDER BY Make
 
 SELECT [Engine HP]
 , CASE WHEN [Engine HP] is null
-	AND Make like '%Chevrolet%'
-	AND Model like '%Impala%' THEN 305
-WHEN [Engine HP] is null
-	AND Make like '%FIAT%'
-	AND Model like '%500e%' THEN 111
-WHEN [Engine HP] is null
-	AND Make like '%ford%'
-	AND Model like '%escape%' THEN 179
-WHEN [Engine HP] is null
-	AND Make like '%ford%'
-	AND Model like '%focus%' THEN 160
-WHEN [Engine HP] is null
-	AND Make like '%ford%'
-	AND Model like '%freestar%' THEN 201
-WHEN [Engine HP] is null
-	AND Make like '%honda%'
-	AND Model like '%fit ev%' THEN 123
-WHEN [Engine HP] is null
-	AND Make like '%kia%'
-	AND Model like '%soul ev%' THEN 109
-WHEN [Engine HP] is null
-	AND Make like '%lincoln%'
-	AND Model like '%mkz%' THEN 245
-WHEN [Engine HP] is null
-	AND Make like '%lincoln%'
-	AND Model like '%continental%' THEN 305
-WHEN [Engine HP] is null
-	AND Make like '%mercedes-benz%'
-	AND Model like '%m-class%' THEN 200
-WHEN [Engine HP] is null
-	AND Make like '%mitsubishi%'
-	AND Model like '%i-miev%' THEN 66
-WHEN [Engine HP] is null
-	AND Make like '%nissan%'
-	AND Model like '%leaf%' THEN 150
-WHEN [Engine HP] is null
-	AND Make like '%tesla%'
-	AND Model like '%model s%' THEN 1020
-WHEN [Engine HP] is null
-	AND Make like '%toyota%'
-	AND Model like '%rav4 ev%' THEN 154
-ELSE [Engine HP]
-END
+			AND Make like '%Chevrolet%'
+			AND Model like '%Impala%' THEN 305
+	   WHEN [Engine HP] is null
+			AND Make like '%FIAT%'
+			AND Model like '%500e%' THEN 111
+	   WHEN [Engine HP] is null
+			AND Make like '%ford%'
+			AND Model like '%escape%' THEN 179
+	   WHEN [Engine HP] is null
+			AND Make like '%ford%'
+			AND Model like '%focus%' THEN 160
+	   WHEN [Engine HP] is null
+			AND Make like '%ford%'
+			AND Model like '%freestar%' THEN 201
+	   WHEN [Engine HP] is null
+			AND Make like '%honda%'
+			AND Model like '%fit ev%' THEN 123
+	   WHEN [Engine HP] is null
+			AND Make like '%kia%'
+			AND Model like '%soul ev%' THEN 109
+	   WHEN [Engine HP] is null
+			AND Make like '%lincoln%'
+			AND Model like '%mkz%' THEN 245
+	   WHEN [Engine HP] is null
+			AND Make like '%lincoln%'
+			AND Model like '%continental%' THEN 305
+	   WHEN [Engine HP] is null
+			AND Make like '%mercedes-benz%'
+			AND Model like '%m-class%' THEN 200
+	   WHEN [Engine HP] is null
+			AND Make like '%mitsubishi%'
+			AND Model like '%i-miev%' THEN 66
+	   WHEN [Engine HP] is null
+			AND Make like '%nissan%'
+			AND Model like '%leaf%' THEN 150
+	   WHEN [Engine HP] is null
+			AND Make like '%tesla%'
+			AND Model like '%model s%' THEN 1020
+	   WHEN [Engine HP] is null
+			AND Make like '%toyota%'
+			AND Model like '%rav4 ev%' THEN 154
+	   ELSE [Engine HP]
+	   END
 FROM CarPricePortfolioProject..CarPrice
 WHERE [Engine HP] is null
 
 UPDATE CarPricePortfolioProject..CarPrice
 SET [Engine HP] = CASE WHEN [Engine HP] is null
-			AND Make like '%Chevrolet%'
-			AND Model like '%Impala%' THEN 305
-		WHEN [Engine HP] is null
-			AND Make like '%FIAT%'
-			AND Model like '%500e%' THEN 111
-		WHEN [Engine HP] is null
-			AND Make like '%ford%'
-			AND Model like '%escape%' THEN 179
-		WHEN [Engine HP] is null
-			AND Make like '%ford%'
-			AND Model like '%focus%' THEN 160
-		WHEN [Engine HP] is null
-			AND Make like '%ford%'
-			AND Model like '%freestar%' THEN 201
-		WHEN [Engine HP] is null
-			AND Make like '%honda%'
-			AND Model like '%fit ev%' THEN 123
-		WHEN [Engine HP] is null
-			AND Make like '%kia%'
-			AND Model like '%soul ev%' THEN 109
-		WHEN [Engine HP] is null
-			AND Make like '%lincoln%'
-			AND Model like '%mkz%' THEN 245
-		WHEN [Engine HP] is null
-			AND Make like '%lincoln%'
-			AND Model like '%continental%' THEN 305
-		WHEN [Engine HP] is null
-			AND Make like '%mercedes-benz%'
-			AND Model like '%m-class%' THEN 200
-		WHEN [Engine HP] is null
-			AND Make like '%mitsubishi%'
-			AND Model like '%i-miev%' THEN 66
-		WHEN [Engine HP] is null
-			AND Make like '%nissan%'
-			AND Model like '%leaf%' THEN 150
-		WHEN [Engine HP] is null
-			AND Make like '%tesla%'
-			AND Model like '%model s%' THEN 1020
-		WHEN [Engine HP] is null
-			AND Make like '%toyota%'
-			AND Model like '%rav4 ev%' THEN 154
-		ELSE [Engine HP]
-		END
+							AND Make like '%Chevrolet%'
+							AND Model like '%Impala%' THEN 305
+					   WHEN [Engine HP] is null
+							AND Make like '%FIAT%'
+							AND Model like '%500e%' THEN 111
+					   WHEN [Engine HP] is null
+							AND Make like '%ford%'
+							AND Model like '%escape%' THEN 179
+					   WHEN [Engine HP] is null
+							AND Make like '%ford%'
+							AND Model like '%focus%' THEN 160
+					   WHEN [Engine HP] is null
+							AND Make like '%ford%'
+							AND Model like '%freestar%' THEN 201
+					   WHEN [Engine HP] is null
+							AND Make like '%honda%'
+							AND Model like '%fit ev%' THEN 123
+					   WHEN [Engine HP] is null
+							AND Make like '%kia%'
+							AND Model like '%soul ev%' THEN 109
+					   WHEN [Engine HP] is null
+							AND Make like '%lincoln%'
+							AND Model like '%mkz%' THEN 245
+					   WHEN [Engine HP] is null
+							AND Make like '%lincoln%'
+							AND Model like '%continental%' THEN 305
+					   WHEN [Engine HP] is null
+							AND Make like '%mercedes-benz%'
+							AND Model like '%m-class%' THEN 200
+					   WHEN [Engine HP] is null
+							AND Make like '%mitsubishi%'
+							AND Model like '%i-miev%' THEN 66
+					   WHEN [Engine HP] is null
+							AND Make like '%nissan%'
+							AND Model like '%leaf%' THEN 150
+					   WHEN [Engine HP] is null
+							AND Make like '%tesla%'
+							AND Model like '%model s%' THEN 1020
+					   WHEN [Engine HP] is null
+							AND Make like '%toyota%'
+							AND Model like '%rav4 ev%' THEN 154
+					   ELSE [Engine HP]
+					   END
 
 ------------------------------------------------------------------------------------------------------
 -- Engine Cylinders Column
@@ -202,17 +202,29 @@ WHERE [Engine Cylinders] is null
 GROUP BY Make, Model, [Engine Cylinders]
 ORDER BY Make, Model
 
-SELECT [Engine Cylinders],
-CASE WHEN [Engine Cylinders] is null THEN 0
-ELSE [Engine Cylinders]
-END
+SELECT [Engine Cylinders]
+, CASE WHEN [Engine Cylinders] is null
+			AND Make like '%mazda%'
+			AND Model like '%rx-7%' THEN 2
+	   WHEN [Engine Cylinders] is null
+			AND Make like '%mazda%'
+			AND Model like '%rx-8%' THEN 2
+	   WHEN [Engine Cylinders] is null THEN 0
+	   ELSE [Engine Cylinders]
+	   END
 FROM CarPricePortfolioProject..CarPrice
 WHERE [Engine Cylinders] is null
 
 UPDATE CarPricePortfolioProject..CarPrice
-SET [Engine Cylinders] = CASE WHEN [Engine Cylinders] is null THEN 0
-ELSE [Engine Cylinders]
-END
+SET [Engine Cylinders] = CASE WHEN [Engine Cylinders] is null
+			AND Make like '%mazda%'
+			AND Model like '%rx-7%' THEN 2
+	   WHEN [Engine Cylinders] is null
+			AND Make like '%mazda%'
+			AND Model like '%rx-8%' THEN 2
+	   WHEN [Engine Cylinders] is null THEN 0
+	   ELSE [Engine Cylinders]
+	   END
 
 ------------------------------------------------------------------------------------------------------
 -- Transmission Type Column
@@ -252,25 +264,25 @@ ORDER BY Make, Model
 
 SELECT [Number of Doors]
 , CASE WHEN [Number of Doors] is null
-	AND Make like '%ferrari%'
-	AND Model like '%ff%' THEN 2
-WHEN [Number of Doors] is null
-	AND Make like '%tesla%'
-	AND Model like '%model s%' THEN 4
-ELSE [Number of Doors]
-END
+			AND Make like '%ferrari%'
+			AND Model like '%ff%' THEN 2
+	   WHEN [Number of Doors] is null
+			AND Make like '%tesla%'
+			AND Model like '%model s%' THEN 4
+	   ELSE [Number of Doors]
+	   END
 FROM CarPricePortfolioProject..CarPrice
 WHERE [Number of Doors] is null
 
 UPDATE CarPricePortfolioProject..CarPrice
 SET [Number of Doors] = CASE WHEN [Number of Doors] is null
-				AND Make like '%ferrari%'
-				AND Model like '%ff%' THEN 2
-			WHEN [Number of Doors] is null
-				AND Make like '%tesla%'
-				AND Model like '%model s%' THEN 4
-			ELSE [Number of Doors]
-			END
+									AND Make like '%ferrari%'
+									AND Model like '%ff%' THEN 2
+							   WHEN [Number of Doors] is null
+									AND Make like '%tesla%'
+									AND Model like '%model s%' THEN 4
+							   ELSE [Number of Doors]
+							   END
 
 ------------------------------------------------------------------------------------------------------
 -- Market Category Column
@@ -395,34 +407,34 @@ FROM CarPricePortfolioProject..CarPrice
 SELECT Make, COUNT(Make) AS Amount
 FROM CarPricePortfolioProject..CarPrice
 GROUP BY Make
-ORDER BY Make
+ORDER BY Amount DESC
 
 ------------------------------------------------------------------------------------------------------
 -- Checking The Number of Brand And Model
 SELECT Make, Model, COUNT(Model) AS Amount
 FROM CarPricePortfolioProject..CarPrice
 GROUP BY Make, Model
-ORDER BY Make, Model
+ORDER BY Amount DESC
 
 ------------------------------------------------------------------------------------------------------
 -- Checking The Number of Year
 SELECT Year, COUNT(Year) AS Amount
 FROM CarPricePortfolioProject..CarPrice
 GROUP BY Year
-ORDER BY Year
+ORDER BY Amount DESC
 
 ------------------------------------------------------------------------------------------------------
 -- Checking The Oldest Car
-SELECT Make, Model, Year
+SELECT Year
 FROM CarPricePortfolioProject..CarPrice
-GROUP BY Make, Model, Year
+GROUP BY Year
 ORDER BY Year
 
 ------------------------------------------------------------------------------------------------------
 -- Checking The Newest Car
-SELECT Make, Model, Year
+SELECT Year
 FROM CarPricePortfolioProject..CarPrice
-GROUP BY Make, Model, Year
+GROUP BY Year
 ORDER BY Year DESC
 
 ------------------------------------------------------------------------------------------------------
@@ -430,14 +442,14 @@ ORDER BY Year DESC
 SELECT [Engine Fuel Type], COUNT([Engine Fuel Type]) AS Amount
 FROM CarPricePortfolioProject..CarPrice
 GROUP BY [Engine Fuel Type]
-ORDER BY [Engine Fuel Type]
+ORDER BY Amount DESC
 
 ------------------------------------------------------------------------------------------------------
 -- Checking The Number of Transmission Type
 SELECT [Transmission Type], COUNT([Transmission Type]) AS Amount
 FROM CarPricePortfolioProject..CarPrice
 GROUP BY [Transmission Type]
-ORDER BY [Transmission Type]
+ORDER BY Amount DESC
 
 -- Changing The UNKNOWN Value
 SELECT *
@@ -451,81 +463,81 @@ GROUP BY Make, Model, Year
 
 SELECT [Transmission Type]
 , CASE WHEN [Transmission Type] like '%unknown%'
-	AND Make like '%pontiac%'
-	AND Model like '%firebird%' THEN 'MANUAL'
-WHEN [Transmission Type] like '%unknown%'
-	AND Make like '%chrysler%'
-	AND Model like '%le baron%' THEN 'MANUAL'
-WHEN [Transmission Type] like '%unknown%'
-	AND Make like '%dodge%'
-	AND Model like '%ram 150%' THEN 'MANUAL'
-WHEN [Transmission Type] like '%unknown%'
-	AND Make like '%gmc%'
-	AND Model like '%jimmy%' 
-	AND Year = 1999 THEN 'MANUAL'
-WHEN [Transmission Type] like '%unknown%'
-	AND Make like '%gmc%'
-	AND Model like '%jimmy%' 
-	AND Year = 2000 THEN 'AUTOMATIC'
-WHEN [Transmission Type] like '%unknown%'
-	AND Make like '%oldsmobile%'
-	AND Model like '%achieva%' THEN 'MANUAL'
-ELSE [Transmission Type]
-END
+			AND Make like '%pontiac%'
+			AND Model like '%firebird%' THEN 'MANUAL'
+	   WHEN [Transmission Type] like '%unknown%'
+			AND Make like '%chrysler%'
+			AND Model like '%le baron%' THEN 'MANUAL'
+	   WHEN [Transmission Type] like '%unknown%'
+			AND Make like '%dodge%'
+			AND Model like '%ram 150%' THEN 'MANUAL'
+	   WHEN [Transmission Type] like '%unknown%'
+			AND Make like '%gmc%'
+			AND Model like '%jimmy%' 
+			AND Year = 1999 THEN 'MANUAL'
+	   WHEN [Transmission Type] like '%unknown%'
+			AND Make like '%gmc%'
+			AND Model like '%jimmy%' 
+			AND Year = 2000 THEN 'AUTOMATIC'
+	   WHEN [Transmission Type] like '%unknown%'
+			AND Make like '%oldsmobile%'
+			AND Model like '%achieva%' THEN 'MANUAL'
+	   ELSE [Transmission Type]
+	   END
 FROM CarPricePortfolioProject..CarPrice
 WHERE [Transmission Type] like 'UNKNOWN'
 
 UPDATE CarPricePortfolioProject..CarPrice
 SET [Transmission Type] = CASE WHEN [Transmission Type] like '%unknown%'
-				AND Make like '%pontiac%'
-				AND Model like '%firebird%' THEN 'MANUAL'
-			WHEN [Transmission Type] like '%unknown%'
-				AND Make like '%chrysler%'
-				AND Model like '%le baron%' THEN 'MANUAL'
-			WHEN [Transmission Type] like '%unknown%'
-				AND Make like '%dodge%'
-				AND Model like '%ram 150%' THEN 'MANUAL'
-			WHEN [Transmission Type] like '%unknown%'
-				AND Make like '%gmc%'
-				AND Model like '%jimmy%' 
-				AND Year = 1999 THEN 'MANUAL'
-			WHEN [Transmission Type] like '%unknown%'
-				AND Make like '%gmc%'
-				AND Model like '%jimmy%' 
-				AND Year = 2000 THEN 'AUTOMATIC'
-			WHEN [Transmission Type] like '%unknown%'
-				AND Make like '%oldsmobile%'
-				AND Model like '%achieva%' THEN 'MANUAL'
-			ELSE [Transmission Type]
-			END
+									AND Make like '%pontiac%'
+									AND Model like '%firebird%' THEN 'MANUAL'
+							   WHEN [Transmission Type] like '%unknown%'
+									AND Make like '%chrysler%'
+									AND Model like '%le baron%' THEN 'MANUAL'
+							   WHEN [Transmission Type] like '%unknown%'
+									AND Make like '%dodge%'
+									AND Model like '%ram 150%' THEN 'MANUAL'
+							   WHEN [Transmission Type] like '%unknown%'
+									AND Make like '%gmc%'
+									AND Model like '%jimmy%' 
+									AND Year = 1999 THEN 'MANUAL'
+							   WHEN [Transmission Type] like '%unknown%'
+									AND Make like '%gmc%'
+									AND Model like '%jimmy%' 
+									AND Year = 2000 THEN 'AUTOMATIC'
+							   WHEN [Transmission Type] like '%unknown%'
+									AND Make like '%oldsmobile%'
+									AND Model like '%achieva%' THEN 'MANUAL'
+							   ELSE [Transmission Type]
+							   END
 
 ------------------------------------------------------------------------------------------------------
 -- Checking The Number of Driven Wheels
 SELECT Driven_Wheels, COUNT(Driven_Wheels) AS Amount
 FROM CarPricePortfolioProject..CarPrice
 GROUP BY Driven_Wheels
-ORDER BY Driven_Wheels
+ORDER BY Amount DESC
 
 ------------------------------------------------------------------------------------------------------
 -- Checking The Number of Doors
 SELECT [Number of Doors], COUNT([Number of Doors]) AS Amount
 FROM CarPricePortfolioProject..CarPrice
 GROUP BY [Number of Doors]
-ORDER BY [Number of Doors]
+ORDER BY Amount DESC
 
 ------------------------------------------------------------------------------------------------------
 -- Checking The Number of Vehicle Size
 SELECT [Vehicle Size], COUNT([Vehicle Size]) AS Amount
 FROM CarPricePortfolioProject..CarPrice
 GROUP BY [Vehicle Size]
-ORDER BY [Vehicle Size]
+ORDER BY Amount DESC
 
 ------------------------------------------------------------------------------------------------------
 -- Checking The Number of Vehicle Style
 SELECT [Vehicle Style], COUNT([Vehicle Style]) AS Amount
 FROM CarPricePortfolioProject..CarPrice
 GROUP BY [Vehicle Style]
-ORDER BY [Vehicle Style]
+ORDER BY Amount DESC
 
 ------------------------------------------------------------------------------------------------------
 -- Checking The Lowest Price
