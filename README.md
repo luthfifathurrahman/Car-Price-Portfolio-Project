@@ -40,25 +40,25 @@ Cars are one of the transportation that people have. Some people buy cars for da
 	- Data Cleansing
 	- Data Exploration
 		- Checking How Many Car Brands are in The Dataset
-      - Visualization
+			- Visualization
 		- Checking How Many Car's Model in The Dataset
-      - Visualization
+      			- Visualization
 		- Checking How Many Cars Based on Year With The Model in The Dataset
-      - Visualization
+      			- Visualization
 		- Checking The Number of The Newest Car in The Dataset
 		- Checking The Number of The Oldest Car in The Dataset
 		- Checking The Number of Engine Fuel Type
-      - Visualization
+      			- Visualization
 		- Checking The Number of Transmission Type
-      - Visualization
+      			- Visualization
 		- Checking The Number of Driven Mode
-      - Visualization
+      			- Visualization
 		- Checking The Number of Doors
-      - Visualization
+      			- Visualization
 		- Checking The Number of Vehicle Size
-      - Visualization
+      			- Visualization
 		- Checking The Number of Vehicle Style
-      - Visualization
+      			- Visualization
 		- Checking The Lowest Price
 		- Checking The Lowest Average Price
 		- Checking The Highest Price
@@ -68,7 +68,7 @@ Cars are one of the transportation that people have. Some people buy cars for da
 		- Checking Which Cars Are The Most Wasteful When It Comes To Fuel Consumption in The City
 		- Checking Which Cars Are The Least Wasteful When It Comes To Fuel Consumption in The City
 		- Checking The Correlation
-      - Visualization
+      			- Visualization
 	- Machine Learning
 		- Removing Duplicates in The Data
 		- Removing Outliers in The Data
