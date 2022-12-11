@@ -1,6 +1,7 @@
 # Car Price Portfolio Project
 
-Cars are one of the transportation that people have. Some people buy cars for daily usage. Some people buy cars because they have good memories from the past. Some even bought a car to complete their collection. It takes a lot of thought to buy a car, for example, the price. "What's the right price for a car?" To answer this question, I helped by building a machine-learning model that predicts a car's price.
+<p align="justify">Cars are one of the transportation that people have. Some people buy cars for daily usage. Some people buy cars because they have good memories from the past. Some even bought a car to complete their collection. It takes a lot of thought to buy a car, for example, the price. "What's the right price for a car?" To answer this question, I helped by building a machine-learning model that predicts a car's price.</p>
+
 
 ## What I Do In This Project
 
